@@ -4,7 +4,7 @@ import scala.util.Random
 import BigInt.probablePrime
 
 //noinspection SpellCheckingInspection
-class C01 extends FunSuite{
+class C01 extends FunSuite {
   test("ex_02") {
     println(math.pow(math.sqrt(3), 2))
   }
@@ -38,7 +38,7 @@ class C01 extends FunSuite{
 
   test("ex_10") {
     val s = "hello sailor!"
-    assert(s.take(5) =="hello")
+    assert(s.take(5) == "hello")
     assert(s.dropRight(8) == "hello")
     assert(s.substring(0, 5) == "hello")
 

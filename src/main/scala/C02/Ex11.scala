@@ -17,10 +17,10 @@ object Ex11 {
       }
     }
 
-    private def isWellFormated(sc: StringContext): Boolean ={
+    private def isWellFormated(sc: StringContext): Boolean = {
       sc.parts(0).isEmpty &&
         sc.parts(3).isEmpty &&
-        sc.parts.slice(1,2).forall(_ == "-")
+        sc.parts.slice(1, 2).forall(_ == "-")
     }
   }
 
