@@ -1,6 +1,8 @@
 # scala-for-the-impatient
+![](https://www.bingeclock.com/memes/futurama___get_to_the_point.jpg)
+
 Scala for the Impatient book club
 
-- Chapters 1 and 2: Feb. 6th
-- Chapter 3: Feb. 13th
+- Chapters 1: Feb. 7th
+- Chapter 2: Feb. 14th
 ...
