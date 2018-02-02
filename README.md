@@ -3,6 +3,6 @@
 
 Scala for the Impatient book club
 
-- Chapters 1: Feb. 7th
+- Chapter 1: Feb. 7th
 - Chapter 2: Feb. 14th
 - ...
