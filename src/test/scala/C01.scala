@@ -18,7 +18,7 @@ class C01 extends FunSuite {
   }
 
   test("ex_06") {
-    println(BigInt(2 ^ 1024))
+    println(BigInt(2) pow 1024)
   }
 
   test("ex_07") {
@@ -26,7 +26,7 @@ class C01 extends FunSuite {
   }
 
   test("ex_08") {
-    val fileName = BigInt(2 ^ Random.nextInt(Integer.MAX_VALUE - 1)).toString(36)
+    val fileName = BigInt.probablePrime(100, Random) toString 36
     println(fileName)
   }
 

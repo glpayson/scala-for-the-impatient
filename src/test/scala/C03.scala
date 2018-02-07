@@ -5,6 +5,10 @@ import C03.Ex03.shiftArray2
 import C03.Ex04.partitionOdd
 import C03.Ex05.average
 import C03.Ex06.reverseSort
+import C03.Ex08.dropFirstNegative
+import C03.Ex09.dropFirstNegative2
+import C03.Ex10.americanTimeZones
+import C03.Ex11.flavor
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -45,5 +49,21 @@ class C03 extends FunSuite {
 
   test("ex_07") {
     assert(Array(1, 2, 1).distinct.deep == Array(1, 2).deep)
+  }
+
+  test("ex_08") {
+    assert(dropFirstNegative(ArrayBuffer(1, -2, -3, 4, -5, 6)) == ArrayBuffer(1, -2, 4, 6))
+  }
+
+  test("ex_09") {
+    assert(dropFirstNegative2(ArrayBuffer(1, -2, -3, 4, -5, 6)) == ArrayBuffer(1, -2, 4, 6))
+  }
+
+  test("ex_10") {
+    println(americanTimeZones())
+  }
+
+  test("ex_11") {
+    println(flavor())
   }
 }
