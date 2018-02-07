@@ -32,7 +32,7 @@ class C01 extends FunSuite {
 
   test("ex_09") {
     val s = "hello sailor!"
-    assert(s(1) == 'h')
+    assert(s(0) == 'h')
     assert(s.last == '!')
   }
 
