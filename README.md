@@ -11,4 +11,5 @@ Scala for the Impatient book club
 - Chapter 6: Mar. 14th
 - Chapter 7: Mar. 21st
 - Chapter 8: Mar. 28th
+
 ...
