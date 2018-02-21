@@ -5,8 +5,8 @@ import C03.Ex03.shiftArray2
 import C03.Ex04.partitionOdd
 import C03.Ex05.average
 import C03.Ex06.reverseSort
-import C03.Ex08.dropFirstNegative
-import C03.Ex09.dropFirstNegative2
+import C03.Ex08.dropSomeNegatives
+import C03.Ex09.dropSomeMoreNegatives
 import C03.Ex10.americanTimeZones
 import C03.Ex11.flavor
 
@@ -86,7 +86,7 @@ class C03 extends FunSuite {
   sequence, and calling a.remove(i) for each index.
    */
   test("ex_08") {
-    assert(dropFirstNegative(ArrayBuffer(1, -2, -3, 4, -5, 6)) == ArrayBuffer(1, -2, 4, 6))
+    assert(dropSomeNegatives(ArrayBuffer(1, -2, -3, 4, -5, 6)) == ArrayBuffer(1, -2, 4, 6))
   }
 
   //  Improve the solution of the preceding exercise by collecting the positions
@@ -94,9 +94,9 @@ class C03 extends FunSuite {
   //  truncate the buffer. Don’t copy any elements before the first unwanted
   //  element.
   test("ex_09") {
-    assert(dropFirstNegative2(ArrayBuffer(1, -2, -3, 4, -5, 6)) == ArrayBuffer(1, -2, 4, 6))
-    assert(dropFirstNegative2(ArrayBuffer(1, -2, -3)) == ArrayBuffer(1, -2))
-    assert(dropFirstNegative2(ArrayBuffer()) == ArrayBuffer())
+    assert(dropSomeMoreNegatives(ArrayBuffer(1, -2, -3, 4, -5, 6)) == ArrayBuffer(1, -2, 4, 6))
+    assert(dropSomeMoreNegatives(ArrayBuffer(1, -2, -3)) == ArrayBuffer(1, -2))
+    assert(dropSomeMoreNegatives(ArrayBuffer()) == ArrayBuffer())
   }
 
   //  Make a collection of all time zones returned by java.util.TimeZone.getAvailableIDs
