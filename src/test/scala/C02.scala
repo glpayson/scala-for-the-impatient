@@ -32,11 +32,11 @@ class C02 extends FunSuite {
   }
 
   test("ex_04") {
-    countToTen()
+    countToTen() // -10 points
   }
 
   test("ex_05") {
-    countToTenProc()
+    countToTenProc(100)
   }
 
   test("ex_06") {
