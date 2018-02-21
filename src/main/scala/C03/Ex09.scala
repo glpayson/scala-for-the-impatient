@@ -4,7 +4,6 @@ import scala.collection.mutable.ArrayBuffer
 
 object Ex09 {
 
-
   def shift(arr: ArrayBuffer[Int], i: Int, negCount: Int) = {
     arr(i - negCount) = arr(i)
   }
@@ -17,6 +16,3 @@ object Ex09 {
     head ++ tail.dropRight(negCount)
   }
 }
-
-//    var positionsToRemove = for (i <- arr.indices if arr(i) < 0) yield (i, i + 1)
-//    positionsToRemove = positionsToRemove.drop(1)
