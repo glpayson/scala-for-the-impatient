@@ -42,7 +42,7 @@ class C03 extends FunSuite {
   //  are zero or negative, in their original order.
   test("ex_04") {
     assert(partitionOdd(Array(1)).deep == Array(1).deep)
-    assert(partitionOdd(Array(1, 2, 3, 4)).deep == Array(2, 4, 1, 3).deep)
+    assert(partitionOdd(Array(1, -2, 3, 4, -5, 0)).deep == Array(1, 3, 4, -2, -5, 0).deep)
     assert(partitionOdd(Array()).deep == Array().deep)
   }
 

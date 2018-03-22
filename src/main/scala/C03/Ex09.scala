@@ -4,7 +4,7 @@ import scala.collection.mutable.ArrayBuffer
 
 object Ex09 {
 
-  def shift(arr: ArrayBuffer[Int], i: Int, negCount: Int) = {
+  def shift(arr: ArrayBuffer[Int], i: Int, negCount: Int): Unit = {
     arr(i - negCount) = arr(i)
   }
 

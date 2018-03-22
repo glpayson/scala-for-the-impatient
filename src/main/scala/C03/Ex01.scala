@@ -1,10 +1,11 @@
 package C03
 
+import scala.util.Random
+
 object Ex01 {
+  val rand = new Random
+
   def randomArray(n: Int): Array[Int] = {
-    val array = new Array[Int](n)
-    val rand = new scala.util.Random
-    0 until n foreach (i => array(i) = rand.nextInt(n))
-    array
+    (0 until n).map(_ => rand.nextInt(n)).toArray
   }
 }
