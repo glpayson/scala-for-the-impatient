@@ -53,6 +53,8 @@ class C05 extends FunSuite{
 
   test("ex_06") {
     val target = new Person("Foo Barington", -42)
+    assert("Foo Barington is 0 years young" == target.description)
+    assert("Foo Barington is 0 years old" == target.description)
     assert(0 == target.age)
   }
 

@@ -9,7 +9,7 @@ class Employee {
     _name = name
     this.salary = salary
   }
-  def name = _name
+  def name: String = _name
 }
 
 // ﻿https://stackoverflow.com/questions/10426146/constructors-in-scala-primary-auxiliary-default-primary/10999828#10999828
